@@ -1,19 +1,21 @@
+#include <stdio.h>
+
 /**
  * main - Entry point
  *
  * Description: Prints the alphabet in lowercase, followed by a new line.
- *              Uses the putchar function to adhere to the given requirements.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char letter;
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-		putchar(letter);
-
+	for (i = 0; i < 26; i++)
+	{
+		putchar(alp[i]);
+	}
 	putchar('\n');
-
 	return (0);
 }
